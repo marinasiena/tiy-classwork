@@ -1,0 +1,36 @@
+form {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+fieldset {
+  break-after: column;
+  text-align: left;
+}
+label {
+  font-weight: bold;
+}
+input, select, textarea {
+  margin-bottom: 20px;
+}
+textarea {
+  width: 99%;
+}
+input:focus, textarea:focus {
+  outline: none !important;
+    border-color: #fca4fc;
+}
+input:invalid {
+    background-color: #fcdbdb;
+}
+
+input:valid {
+    background-color: #e0ffe0;
+}
+input #pilotExp {
+  margin-bottom: 0;
+}

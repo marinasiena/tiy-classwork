@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <title>Force User Signup Form</title>
+  <link rel=stylesheet href="styles/main.css">
+</head>
+
+<body>
+  <head>
+  <h1>Force User SignUp Form</h1>
+  </head>
+
+  <main>
+    <form action="http://requestb.in/14cuogv1" method="post">
+      <fieldset>
+        <legend>Basic Info</legend>
+
+        <label for="FullName">Full Name</label><br />
+        <input id="fullName" type="text" placeholder="Full Name" name="fullName" required />
+        <br />
+        <label for="profilePic">Profile Pic</label><br />
+        <input id="profilePic" type="file" placeholder="Choose File" name="profilePic" accept=".jpg,.png,.gif"/>
+        <br />
+        <label for="email">Email</label><br />
+        <input id="email" type="email" placeholder="luke@sky.com" name="email"/>
+        <br />
+        <label for="side">Side</label><br />
+        <input id="side" type="radio" name="side" value="Light" />Light
+        <input id="side" type="radio" name="side" value="Dark" />Dark
+        <br />
+        <label for="originStory">Origin Story</label><br />
+        <textarea id="originStory" rows="3" name="originStory"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Abilities</legend>
+        <label for="lightsaber">Lightsaber Color</label><br />
+        <select id="lightsaber" type="text" name="lightsaber" />
+          <option selected>Choose Color</option>
+          <option>Blue</option>
+          <option>Red</option>
+          <option>Purple</option>
+          <option>Green</option>
+        </select>
+        <br />
+        <label for="levObj">How many objects can you levitate at once?</label>
+        <input id="levObj" type="number" min="1" name="levObj" value="1"/>
+        <br />
+        <label for="favAbility">Favorite Ability</label><br />
+        <input id="favAbility" type="text" placeholder="precognition" name="favAbility" />
+        <br />
+        <label for="pilotExp">Pilot Experience</label><br />
+        <input id="pilotExp" type="checkbox" name="pilotExp" value="Speeder" />Speeder<br />
+        <input id="pilotExp" type="checkbox" name="pilotExp" value="X-wing" />Transport<br />
+        <input id="pilotExp" type="checkbox" name="pilotExp" value="TIE Fighter" />TIE Fighter<br />
+        <input id="pilotExp" type="checkbox" name="pilotExp" value="Starship" />Starship<br />
+        <input id="pilotExp" type="checkbox" name="pilotExp" value="Bantha" />Bantha
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Application Info</legend>
+        <label for="desMentor">Desired Mentor</label><br />
+        <input id="desMentor" type="text" placeholder="Y O D A" name="desMentor" />
+        <br />
+        <label for="apDate">Application Date</label><br />
+        <input id="apDate" type="date" name="apDate" />
+          <script type="text/javascript">
+            document.getElementById('apDate').value = new Date().toISOString().substring(0, 10);
+          </script>
+        <br />
+        <label for="password">Application Password</label><br />
+        <input id="password" type="password" name="password" />
+        <br />
+        <label for="howtoDark">How do you get to the dark side?</label><br />
+        <textarea id="howtoDark" rows="3" name="howtoDark"></textarea>
+
+        <input type="reset" value="Start Over">
+        <input type="submit" value="Apply">
+  </fieldset>
+
+    </form>
+  </main>
+
+  <footer>
+    <span>&copy <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>
+ The Republic</span>
+  </footer>
+</body>
+</html>
