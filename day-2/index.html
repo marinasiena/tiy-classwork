@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <title>ItalianPizzeria III</title>
+  <link rel=stylesheet href="css/pizza.css" />
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="img/ip3_logo.png" alt="ItalianPizzeriaIII" />
+    <h1>Italian Pizzeria III</h1>
+    <p>something else</p>
+  </header>
+
+  <main>
+    <table>
+      <tr tabindex="0">
+        <td>Monday - Thursday</td>
+        <td>12:00pm - 11:00am</td>
+      </tr>
+      <tr tabindex="0">
+        <td>Friday - Saturday</td>
+        <td>10:00pm - 11:00am</td>
+      </tr>
+      <tr tabindex="0">
+        <td>Closed Sunday</td>
+        <td>all day</td>
+      </tr>
+    </table>
+    <br />
+
+    <form autocomplete="off"  action="http://requestb.in/1kru27v1" method="post">
+
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="customer_name">Name</label>
+        <input id="customer_name" type="text" placeholder="Your Name" name="CustomerName" required />
+
+        <label for="customer_address">Address</label>
+        <input id="customer_address" type="text" placeholder="Street Address" name="Street Address"/>
+
+        <label for="customer_city">City</label>
+        <input id="customer_city"type="text" placeholder="City" name="City"/>
+
+        <label for="customer_state">State</label>
+        <input id="customer_state"type="text" placeholder="State" maxlength="2" name="State"/>
+
+        <label for="customer_zip">Zip</label>
+        <input id="customer_zip"type="text" placeholder="Zip Code" maxlength="5" name="ZipCode"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Order Details</legend>
+        <label for="pizza-size">Pizza size</label>
+        <select id="pizza-size" name="PizzaSize">
+          <option selected>Select-a-size</option>
+          <option value="sm">Small</option>
+          <option value="md">Medium</option>
+          <option value="lg">Large</option>
+          <option value="xl">X-large</option>
+        </select>
+
+        <label for="pizza-quantity">Quantity</label>
+        <input id="pizza-quantity" type="number" min="1" max="15" name="PizzaQuantity"/>
+
+        <fieldset>
+          <legend>Toppings</legend>
+          <label for="pepperoni">Pepperoni</label>
+          <input id="pepperoni" type="checkbox" name="Pepperoni">
+
+          <label for="bacon">Bacon</label>
+          <input id="bacon" type="checkbox" name="Bacon">
+
+          <label for="sausage">Sausage</label>
+          <input id="sausage" type="checkbox" name="Sausage">
+        </fieldset>
+
+      </fieldset>
+      <label for="special-instructions">Special Instructions</label>
+      <textarea id="special-instructions" rows="3" cols="50" name="SpecialInst"></textarea>
+      <input type="submit" value="Place Order" />
+    </form>
+
+  </main>
+
+  <footer>
+    <img class="logo" src="img/ip3_logo.png" alt="ItalianPizzeriaIII" />
+    <span>&copy 2017</span>
+  </footer>
+
+
+
+
+
+</body>
+</html>
