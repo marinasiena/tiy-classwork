@@ -11,14 +11,22 @@ fieldset {
   break-after: column;
   text-align: left;
 }
+
 label {
   font-weight: bold;
+  display: block;
 }
+
 input, select, textarea {
   margin-bottom: 20px;
 }
+
 textarea {
-  width: 99%;
+  width: 90%;
+}
+
+input {
+  display: inline-block;
 }
 input:focus, textarea:focus {
   outline: none !important;
@@ -30,7 +38,4 @@ input:invalid {
 
 input:valid {
     background-color: #e0ffe0;
-}
-input #pilotExp {
-  margin-bottom: 0;
 }
